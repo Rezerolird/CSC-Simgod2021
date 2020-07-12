@@ -26,7 +26,7 @@ int main(){
     RAMCO<uint32_t, f> ramco(NUM_DB, 500, total_items_csccf, R, B);
 
     //data insertion
-    string file_prefix = "/home/nsklab/lird/kdd2020/experiment/datasets_dna/d500_new/class_";
+    string file_prefix = "/class_";
     string lines; lines.clear();
     for(int i=0; i<NUM_DB; i++){
         cout << i << endl;
@@ -51,7 +51,7 @@ int main(){
     }
 
     //query insertion
-    string query_file1 = "/home/nsklab/lird/kdd2020/experiment/datasets/RCV1-x/query_new";
+    string query_file1 = "query_new";
     string line; line.clear();
     ifstream new_query(query_file1);
     stringstream sstr;
