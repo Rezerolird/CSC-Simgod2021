@@ -8,7 +8,10 @@ To run CSC-BF, one can compile it using
 
 `g++ main.cpp BIGSI.cpp MurmurHash3.cpp BloomFilter.cpp Rambo.cpp CSCBF.cpp bitarray.cpp CSCBFBIGSI.cpp -o main -std=c++14`
 
+and then run `./main`
+
 To run CSC-CF, one can compile it using
 
 `g++ main.cpp bitarray.cpp MurmurHash3.cpp -o main -std=c++14`
 
+and then run `./main`
