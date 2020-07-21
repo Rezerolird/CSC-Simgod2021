@@ -12,7 +12,7 @@
 #include "CSCBF.h"
 #include "CSCBFBIGSI.h"
 
-#define NUM_DB 2456
+#define NUM_DB 4
 #define HASH_NUM 3
 #define REP_TIME 3
 #define PART_NUM 62
@@ -29,7 +29,7 @@ int main(){
     CSCBFBIGSI cscbf_bigsi(TOTAL_CAP, HASH_NUM, NUM_DB);    
 
     // data insertion
-    string file_prefix = "class_";
+    string file_prefix = "../../data/class_";
     string lines; lines.clear(); int j = 0;
     for(int i=0; i<NUM_DB; i++){
         cout << i << endl;
@@ -56,7 +56,7 @@ int main(){
 
 
     /*** query insert ***/
-    string query_file1 = "query_new";
+    string query_file1 = "../../data/query_new";
     string line; line.clear();
     ifstream new_query(query_file1);
     stringstream sstr;
